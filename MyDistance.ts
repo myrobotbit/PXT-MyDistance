@@ -23,15 +23,16 @@ namespace MyDistance {
     //% weight=80
     export function analogReadDistance(selectpin: analogPort): number {
      let DistanceVal = 0;
+     let Distance = 0;
      switch (selectpin) {
             case analogPort.P0:
                 DistanceVal = (pins.analogReadPin(AnalogPin.P0))*(5.3/1024);
-                return DistanceVal = 65*pow((DistanceVal, -1.1);
+                return Distance = 65*pow((DistanceVal, -1.1);
             case analogPort.P1:
                 DistanceVal = (pins.analogReadPin(AnalogPin.P1))*(5.3/1024);
-                return DistanceVal = 65*pow((DistanceVal, -1.1);
+                return Distance = 65*pow((DistanceVal, -1.1);
             default:
-                return DistanceVal = 0;
+                return Distance = 0;
         }
     }
 }
