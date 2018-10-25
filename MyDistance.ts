@@ -6,11 +6,7 @@ namespace MyDistance {
 
    export enum analogPort {
         P0,
-        P1,
-        P2,
-        P3,
-        P4,
-        P10
+        P1
     }
 
     /**
