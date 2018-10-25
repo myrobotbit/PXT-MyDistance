@@ -1,8 +1,8 @@
 /**
   * Coding for read sharp distance sensor.
   */
-//% weight=8 icon="\uf11e" color=#339933 block="MySensor"
-namespace MySensor {
+//% weight=8 icon="\uf11e" color=#339933 block="MyDistance"
+namespace MyDistance {
 
    export enum analogPort {
         P0,
