@@ -18,18 +18,16 @@ namespace MyDistance {
     //% block="analog read |%selectpin|"
     //% weight=80
     export function analogReadDistance(selectpin: analogPort): number {
-     let analogVal = 0;
-     let DistanceVal = 0;
-     let Distance:number;
+            let Distance: number;
      switch (selectpin) {
             case analogPort.P0:
-                analogVal = pins.analogReadPin(AnalogPin.P0);
-                DistanceVal = analogVal*(5.3/1024);
+                let analogVal = pins.analogReadPin(AnalogPin.P0);
+                let DistanceVal = analogVal*(5.3/1024);
                 Distance = 65*pow(DistanceVal, -1.1);
                 return Distance;
             case analogPort.P1:
-                analogVal = pins.analogReadPin(AnalogPin.P1);
-                DistanceVal = analogVal*(5.3/1024);
+                let analogVal = pins.analogReadPin(AnalogPin.P1);
+                let DistanceVal = analogVal*(5.3/1024);
                 Distance = 65*pow(DistanceVal, -1.1);
                 return Distance;
             default:
