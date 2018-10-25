@@ -26,10 +26,10 @@ namespace MyDistance {
      switch (selectpin) {
             case analogPort.P0:
                 DistanceVal = (pins.analogReadPin(AnalogPin.P0))*(5.3/1024);
-                return DistanceVal = 65*pow((distance1, -1.1);
+                return DistanceVal = 65*pow((distance1, -1.1)
             case analogPort.P1:
                 DistanceVal = (pins.analogReadPin(AnalogPin.P1))*(5.3/1024);
-                return DistanceVal = 65*pow((distance1, -1.1);
+                return DistanceVal = 65*pow((distance1, -1.1)
             case analogPort.P2:
                 return 0;
             case analogPort.P3:
