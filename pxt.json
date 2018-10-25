@@ -1,0 +1,17 @@
+{
+    "name": "pxt-MySensor",
+    "version": "0.0.1",
+    "description": "A MakeCode package to use analog sensor",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "MySensor.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true
+}
