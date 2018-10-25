@@ -31,7 +31,7 @@ namespace MyDistance {
                 DistanceVal = (pins.analogReadPin(AnalogPin.P1))*(5.3/1024)
                 return DistanceVal = 65*pow((distance1, -1.1)
             default:
-                return DistanceVal =0;
+                return DistanceVal =0
         }
     }
 }
