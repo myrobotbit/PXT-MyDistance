@@ -29,10 +29,12 @@ namespace MyDistance {
                 DistanceVal = (pins.analogReadPin(AnalogPin.P0))*(5.3/1024);
                 Distance = 65*pow(DistanceVal, -1.1);
                 return Distance;
+                Break;
             case analogPort.P1:
                 DistanceVal = (pins.analogReadPin(AnalogPin.P1))*(5.3/1024);
                 Distance = 65*pow(DistanceVal, -1.1);
                 return Distance;
+                Break;
             default:
                 return Distance;
         }
