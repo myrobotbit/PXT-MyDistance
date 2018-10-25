@@ -1,7 +1,7 @@
 /**
   * Coding for read sharp distance sensor.
   */
-//% weight=8 icon="\uf11e" color=#ff00cc block="MyDistance"
+//% weight=8 icon="\uf11e" color=#ffff00 block="MyDistance"
 namespace MyDistance {
 
    export enum analogPort {
@@ -18,15 +18,18 @@ namespace MyDistance {
     //% block="analog read |%selectpin|"
     //% weight=80
     export function analogReadDistance(selectpin: analogPort): number {
+     let analogVal = 0;
      let DistanceVal = 0;
      let Distance:number;
      switch (selectpin) {
             case analogPort.P0:
-                DistanceVal = pins.analogReadPin(AnalogPin.P0)*(5.3/1024);
+                analogVal = pins.analogReadPin(AnalogPin.P0);
+                DistanceVal = analogVal*(5.3/1024);
                 Distance = 65*pow(DistanceVal, -1.1);
                 return Distance;
             case analogPort.P1:
-                DistanceVal = pins.analogReadPin(AnalogPin.P1)*(5.3/1024);
+                analogVal = pins.analogReadPin(AnalogPin.P1);
+                DistanceVal = analogVal*(5.3/1024);
                 Distance = 65*pow(DistanceVal, -1.1);
                 return Distance;
             default:
