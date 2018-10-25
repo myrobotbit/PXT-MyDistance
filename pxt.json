@@ -1,5 +1,5 @@
 {
-    "name": "pxt-MySensor",
+    "name": "PXT-MyDistance",
     "version": "0.0.1",
     "description": "A MakeCode package to use analog sensor",
     "license": "MIT",
@@ -8,7 +8,7 @@
     },
     "files": [
         "README.md",
-        "MySensor.ts"
+        "MyDistance.ts"
     ],
     "testFiles": [
         "test.ts"
